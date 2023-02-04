@@ -1,0 +1,52 @@
+body {
+  font-family: sans-serif;
+}
+.container {
+  margin: 100px;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+header {
+  padding: 40px 110px;
+  margin-top: 20px;
+}
+
+.searchCity {
+  padding: 20px;
+  padding-top: 0;
+}
+
+.daysForecast {
+  margin: 0 20px 50px 20px;
+  padding: 10px;
+}
+
+.days {
+  padding: 20px;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+}
+
+.icons {
+  color: orange;
+}
+
+.big-icon {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.date {
+  padding: 12px 0;
+  text-align: center;
+}

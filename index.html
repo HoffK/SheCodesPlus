@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/02d5b86899.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container border border-3">
+      <header class="row">
+        <div class="col">
+          <h1 id="city">Southampton</h1>
+          <h1 id="tempFromApi">23°C</h1>
+        </div>
+        <div class="col">
+          <div class="date">
+            <h2 id="date">Date</h2>
+            <h2 id="time">Time</h2>
+          </div>
+        </div>
+        <div class="col big-icon">
+          <i class="fa-solid fa-sun icons fa-6x"></i>
+        </div>
+      </header>
+      <div class="searchCity">
+        <form id="cityForm">
+          <input
+            type="text"
+            class="form-control"
+            id="city-input"
+            aria-describedby="emailHelp"
+            placeholder="Search city"
+          />
+          <input
+            type="submit"
+            value="Change location"
+            class="btn btn-outline-secondary btn-sm"
+          />
+        </form>
+      </div>
+      <div class="daysForecast border border-2">
+        <p>5-day forecast:</p>
+        <div class="row days">
+          <div class="col">
+            <i class="fa-solid fa-sun icons"></i><br />
+            Mon
+          </div>
+          <div class="col">
+            <i class="fa-solid fa-sun icons"></i><br />
+            Tue
+          </div>
+          <div class="col">
+            <i class="fa-solid fa-sun icons"></i><br />
+            Wed
+          </div>
+          <div class="col">
+            <i class="fa-solid fa-sun icons"></i><br />
+            Thu
+          </div>
+          <div class="col">
+            <i class="fa-solid fa-sun icons"></i><br />
+            Fri
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
